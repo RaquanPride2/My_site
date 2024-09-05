@@ -1,0 +1,163 @@
+body {
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: mediumslateblue; /*font color*/
+  background-color: black;
+}
+h1 {
+  size: 1.5em;
+  font-weight: bold;
+  color: darkslateblue; /*font color*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: darkslateblue; /*font color*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+ol li {
+  color: deepskyblue; /*font color*/
+}
+p {
+  line-height: 2em;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+a {
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+}
+footer {
+  color: white;
+  background: black;
+  height: 100px;
+  padding: 1em 1.25em;
+  position: relative;
+  clear: left;
+  border-top: inset mediumslateblue 1px;
+}
+header {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  background-color: black;
+  max-width: 100%;
+  border-bottom: inset mediumslateblue 1px;
+}
+img {
+  margin-right: 10%;
+  height: 250px;
+  width: 250px;
+  float: right;
+  max-width: 100%;
+}
+main {
+  overflow: hidden;
+  padding: 1em 1.25em;
+  background-color: papayawhip;
+  width: 100%;
+  clear: both;
+  opacity: 75;
+}
+a:link, a:visited {
+  color: mediumslateblue;
+}
+a:hover {
+  font-size: 1.2em;
+  color: mediumslateblue;
+}
+p::first-letter {
+  font-size: 2em;
+}
+.squbullet {
+  list-style-type: square;
+}
+
+/*These are ID styles*/
+#copyright {
+  float: left;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1.2em;
+}
+#contact {
+  float: right;
+  bottom: 0;
+  margin-bottom: 1.2em;
+  /*ID styles start with a "#"*/
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li a {
+  display: block;
+  border: 2px outset;
+  border-radius: 0.5em;
+  padding: 0.75em 1em;
+  margin: 1em;
+  transition-property: background-color width;
+  transition-duration: 0.5s;
+  position: relative;
+}
+.imgborder {
+  border-style: solid;
+  border-width: thick;
+  border-color: white;
+}
+/*Class styles start with a "."*/
+.imglist {
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  width: 100px;
+  height: 100px;
+}
+.imglist:hover {
+  transform: rotate(-5deg) scale(2) skew(5deg);
+}
+nav ul li a:hover {
+  background-color: mediumslateblue;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 50%;
+}
+
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 1.5px;
+}
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+tr:nth-child(odd) {
+  background-color: khaki;
+}
+a[href^="mailto:"] {
+  font-size: 1em;
+}
+a[href^="tel:"] {
+  font-size: 1em;
+}
+.highlight {
+  background-color: blue;
+  width: 300px;
+}
