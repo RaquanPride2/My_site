@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="files.js"></script>
+  <style>
+    input[type=text], input[type=email] {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    textarea {
+      width: 50%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: whitesmoke;
+      resize: none;
+    }
+    input[type=submit] {
+      background-color: mediumslateblue;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+    }
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      max-width: 100%;
+      width: 100%;
+      border-radius: 4px;
+      background-color: mediumslateblue;
+      padding: 5px;
+    }
+    label {
+      padding: 12px 12px 12px 0;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+    input[type=checkbox] + label, input[type=radio] + label {
+      padding: 0 12px 0 1.5px;
+      display: inline-block;
+    }
+    label + p {
+      text-indent: 0;
+    }
+  </style>
+  <title>Raquan's Website</title>
+</head>
+<body>
+  <div id="header" class="imgborder"></div>
+  <main>
+    <h1>Contact</h1>
+    <form name="form" method="post" action="http://cis190a.nupurple.net/vdevine/project/contact.php">
+      <fieldset>
+        <p>
+          <label>Name:</label>
+          <input type="text" name="Name" required id="Name">
+        </p>
+
+        <p>
+          <label>Email:</label>
+          <input type="email" name="email" value="" required>
+        </p>
+
+        <p>
+          <label>What is your favorite color?</label>
+          <ul>
+            <li><input type="radio" name="color" id="color2" value="Blue"><label for="color2">Blue</label></li>
+            <li><input type="radio" name="color" id="color3" value="Red"><label for="color3">Red</label></li>
+            <li><input type="radio" name="color" id="color4" value="Purple"><label for="color4">Purple</label></li>
+            <li><input type="radio" name="color" id="color5" value="Green"><label for="color5">Green</label></li>
+          </ul>
+        </p>
+
+        <p>
+          <label>What movies have you watched?</label>
+          <ul>
+            <li><input type="checkbox" name="movie[]" id="movie1" value="The Batman"><label for="movie1">The Batman</label></li>
+            <li><input type="checkbox" name="movie[]" id="movie2" value="Bullet Train"><label for="movie2">Bullet Train</label></li>
+            <li><input type="checkbox" name="movie[]" id="movie3" value="Thor"><label for="movie3">Thor</label></li>
+            <li><input type="checkbox" name="movie[]" id="movie4" value="Logan"><label for="movie4">Logan</label></li>
+          </ul>
+        </p>
+
+        <p>
+          <label>What is the best contact method?</label>
+          <select name="contact" id="contact" required size="4">
+            <option disabled>Choose One Below</option>
+            <option value="">Select best method</option>
+            <option value="Call">Call</option>
+            <option value="Email">Email</option>
+            <option value="Text">Text</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Comments or Questions:</label>
+          <input type="text" name="comments" id="comments">
+        </p>
+
+        <p>
+          <input type="submit" id="submit" name="submit" value="Submit">
+        </p>
+      </fieldset>
+    </form>
+  </main>
+  <div id="footer"></div>
+</body>
+</html>
